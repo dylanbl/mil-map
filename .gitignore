@@ -1,3 +1,16 @@
+# venv folder
+venv/
+
+# raw data (.csv and .txt files) 
+data/**/*.csv
+data/**/*.txt
+
+# data processing code -- VERY unfinished 
+src/dataProcessor/
+
+# utility functions related to data -- VERY unfinished 
+src/util/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

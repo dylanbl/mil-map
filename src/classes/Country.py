@@ -6,7 +6,8 @@ class Country():
         data = {}
         with open("data/masterCountryData.json") as f: 
             data = json.load(f)
-        
+            f.close()
+         
         return data["countries"][country]
 
     def __init__(self, country: str) -> None:

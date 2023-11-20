@@ -1,4 +1,5 @@
 import json 
+#import geojson
 import pandas as pd
 
 def cleanOfficialCountryNames(): 
@@ -24,4 +25,14 @@ def cleanOfficialCountryNames():
     
     raw.close()
     f_out.close()
-    
+
+def parseGeoJson(): 
+    data = {}
+    with open("countryBorders.geojson") as f: 
+        data = json.load(f)
+
+    out = open("data/countryBorders.geojson", "w")
+    for row in data["features"]: 
+        if row["properties"]["ISO_A3"] != "-99":
+            
+            print(row["properties"]["ISO_A3"])

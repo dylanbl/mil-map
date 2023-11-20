@@ -4,6 +4,9 @@ from dataProcessor.create_json import *
 from dataProcessor.gloablCountryList import globalCountryList
 
 def main(): 
+    parseGeoJson()
+
+    """
     countries = []
 
     for country in globalCountryList: 
@@ -18,6 +21,7 @@ def main():
         print("    ISO-3611 3-letter code:     " + countryNames.threeLetterCode)
         print("    ISO-3611 numeric code:      " + countryNames.numericCode)
         print("\n")
+    """
 
 if __name__ == "__main__": 
     main()

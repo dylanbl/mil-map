@@ -1,11 +1,11 @@
 # config.js
 config.js
 
-# node_modules
-node_modules/
+# node_modules folder
+node_modules
 
 # venv folder
-venv/
+venv
 
 # raw data (.csv and .txt files) 
 data/**/*.csv
